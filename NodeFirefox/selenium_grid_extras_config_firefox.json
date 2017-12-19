@@ -1,0 +1,37 @@
+{
+  "theConfigMap": {
+    "auto_update_browser_versions": "1",
+    "hub_config_files": [],
+    "auto_start_hub": "0",
+    "default_role": "node",
+    "unregisterNodeDuringReboot": "true",
+    "auto_update_drivers": "0",
+    "video_recording_options": {
+      "videos_to_keep": "40",
+      "lower_third_background_color": "0,0,0,0",
+      "title_frame_font_color": "0,0,0,0",
+      "lower_third_font_color": "0,0,0,0"
+    },
+    "auto_start_node": "1",
+    "hub_config": {},
+    "log_maximum_age_ms": 864000000,
+    "reboot_after_sessions": "5",
+    "grid_extras_port": "3000",
+    "grid_jvm_x_options": "-Xms512m -Xmx1024m",        
+    "grid_jvm_options": {
+      "selenium.LOGGER.level": "INFO"
+    },   
+    "geckodriver": {
+      "bit": "64",
+      "version": "0.19.1",
+      "directory": "/opt/selenium/webdrivers/webdriver"
+    },
+    "webdriver": {
+      "version": "3.8.1",
+      "directory": "/opt/selenium/webdrivers/webdriver"
+    },
+    "node_config_files": [
+      "node_5555.json"
+    ]
+  }
+}

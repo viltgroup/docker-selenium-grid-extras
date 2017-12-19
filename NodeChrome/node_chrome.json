@@ -1,0 +1,24 @@
+{
+  "capabilities": [
+    {
+      "seleniumProtocol": "WebDriver",
+      "browserName": "chrome",
+      "maxInstances": 3,
+      "version": "",
+      "platform": "LINUX"
+    }
+  ],
+  "loadedFromFile": "node_5555.json",
+  "proxy": "com.groupon.seleniumgridextras.grid.proxies.SetupTeardownProxy",
+  "servlets": [],
+  "maxSession": 3,
+  "port": 5555,
+  "register": true,
+  "unregisterIfStillDownAfter": 10000,
+  "hubPort": 4444,
+  "hubHost": "seleniumHub",
+  "registerCycle": 5000,
+  "nodeStatusCheckTimeout": 10000,
+  "custom": {},
+  "downPollingLimit": 0
+}

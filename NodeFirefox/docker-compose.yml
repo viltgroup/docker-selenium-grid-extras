@@ -1,0 +1,23 @@
+version: '3'
+services:
+  seleniumFirefox:
+    image: minium/selenium-grid-extras-firefox:2.0.1
+    build: .
+    container_name: selenium-grid-extras-firefox
+    restart: unless-stopped
+    shm_size: 2g
+    ports:
+      - "5555:5555"
+      - "3200:3000"
+    depends_on:
+      - seleniumHub
+    environment:
+      - JAVA_OPTS=-Xms512m -Xmx512m
+      - SCREEN_DEPTH=24
+  seleniumHub:
+    image: minium/selenium-grid-extras-hub:2.0.1
+    container_name: selenium-grid-extras-hub
+    restart: unless-stopped
+    ports:
+      - "4444:4444"
+      - "3000:3000"

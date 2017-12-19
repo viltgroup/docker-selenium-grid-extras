@@ -1,0 +1,5 @@
+version: '3'
+services:
+  seleniumhub:
+    image: minium/selenium-grid-extras-base:2.0.1
+    build: .

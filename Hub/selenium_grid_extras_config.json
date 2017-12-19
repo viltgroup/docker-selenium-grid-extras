@@ -1,0 +1,27 @@
+{
+  "theConfigMap": {
+    "auto_update_browser_versions": "1",
+    "hub_config_files": [
+      "hub_4444.json"
+    ],
+    "auto_start_hub": "1",
+    "default_role": "hub",
+    "auto_update_drivers": "0",
+    "video_recording_options": {
+      "videos_to_keep": "40"
+    },
+    "hub_config": {},
+    "log_maximum_age_ms": 864000000,
+    "reboot_after_sessions": "1",
+    "grid_extras_port": "3000",
+    "grid_jvm_x_options": "-Xmx768m", 
+    "grid_jvm_options": {
+      "selenium.LOGGER.level": "ALL"
+    },      
+    "webdriver": {
+      "version": "3.8.1",
+      "directory": "/opt/selenium/webdrivers/webdriver"
+    },
+    "node_config_files": []
+  }
+}
