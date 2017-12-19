@@ -16,7 +16,7 @@ chrome:
 
 firefox:
 			cd ./NodeFirefox && FIREFOX_VERSION=$(FIREFOX_VERSION) docker-compose build
-
+	
 
 release:
 	docker push $(NAME)-hub:$(SELENIUM_GRID_EXTRAS_VERSION)
