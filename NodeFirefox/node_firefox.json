@@ -3,7 +3,7 @@
       {
         "seleniumProtocol": "WebDriver",
         "browserName": "firefox",
-        "maxInstances": 1,
+        "maxInstances": 3,
         "version": "57",
         "platform": "LINUX"
       }

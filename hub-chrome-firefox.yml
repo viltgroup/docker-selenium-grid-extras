@@ -16,6 +16,8 @@ services:
       - DBUS_SESSION_BUS_ADDRESS=/dev/null
     volumes:
        - /dev/shm:/dev/shm 
+#       - ./custom_grid_config.json:/opt/selenium/selenium_grid_extras_config.json
+#       - ./custom_node_config.json:/opt/selenium/node_5555.json
   seleniumFirefox:
     image: minium/selenium-grid-extras-firefox:2.0.1
     build: .
@@ -29,6 +31,9 @@ services:
       - seleniumHub
     environment:
       - JAVA_OPTS=-Xms512m -Xmx1024m
+#    volumes:
+#       - ./custom_grid_config.json:/opt/selenium/selenium_grid_extras_config.json
+#       - ./custom_node_config.json:/opt/selenium/node_5555.json
   seleniumHub:
     image: minium/selenium-grid-extras-hub:2.0.1
     container_name: selenium-grid-extras-hub
@@ -38,3 +43,8 @@ services:
       - "3000:3000"
     environment:
       - JAVA_OPTS=-Xms512m -Xmx768m
+#     - SE_OPTS=-debug true      
+#    volumes:
+#       - ./custom_grid_config.json:/opt/selenium/selenium_grid_extras_config.json
+#       - ./custom_hub_config.json:/opt/selenium/hub_4444.json
+#       - ./log4j.properties:/opt/selenium/log4j.properties
