@@ -2,7 +2,10 @@ version: '3'
 services:
   seleniumhub:
     image: minium/selenium-grid-extras-hub:2.0.1
-    build: .
+    build: 
+      context: .
+      args: 
+        - SELENIUM_GRID_EXTRAS_VERSION
     container_name: selenium-grid-extras-hub
     restart: unless-stopped
     ports:

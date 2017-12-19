@@ -2,7 +2,10 @@ version: '3'
 services:
   seleniumFirefox:
     image: minium/selenium-grid-extras-firefox:2.0.1
-    build: .
+    build: 
+      context: .
+      args: 
+        - FIREFOX_VERSION
     container_name: selenium-grid-extras-firefox
     restart: unless-stopped
     shm_size: 2g
