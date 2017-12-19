@@ -10,6 +10,8 @@ Images included:
 
 All images are versioned after the [Selenium-Grid-Extras](https://github.com/groupon/Selenium-Grid-Extras) release number.
 
+The images can be found in the [Docker Hub](https://hub.docker.com/u/minium/)
+
 
 ## Running the images
 
