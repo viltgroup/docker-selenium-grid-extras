@@ -57,7 +57,7 @@ Keep in mind the `NodeBase` needs to be built before `NodeChrome` and `NodeFiref
 Using Makefile to build all:
 
 ``` bash
-SELENIUM_GRID_EXTRAS_VERSION=2.0.1 FIREFOX_VERSION=57.0.2 make build
+SELENIUM_GRID_EXTRAS_VERSION=2.0.1 FIREFOX_VERSION=57.0.4 make build
 ```
 
 
@@ -76,4 +76,4 @@ For more information see: https://github.com/groupon/Selenium-Grid-Extras#changi
 
 ## Known Issues:
 
-- Fullscreen doesn't work with Xvfb on Google Chrome (https://github.com/seleniumhq/selenium-google-code-issue-archive/issues/6775)
+- ~~Fullscreen doesn't work with Xvfb on Google Chrome~~ (https://github.com/seleniumhq/selenium-google-code-issue-archive/issues/6775) (Fixed by using fluxbox)

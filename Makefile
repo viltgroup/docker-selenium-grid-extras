@@ -6,16 +6,16 @@ all: hub chrome firefox
 build: all
 
 hub: 
-			cd ./Hub && SELENIUM_GRID_EXTRAS_VERSION=$(SELENIUM_GRID_EXTRAS_VERSION) docker-compose build
+			cd ./Hub && SELENIUM_GRID_EXTRAS_VERSION=$(SELENIUM_GRID_EXTRAS_VERSION) docker-compose build --no-cache
 
 nodebase: 
-			cd ./NodeBase && SELENIUM_GRID_EXTRAS_VERSION=$(SELENIUM_GRID_EXTRAS_VERSION) docker-compose build
+			cd ./NodeBase && SELENIUM_GRID_EXTRAS_VERSION=$(SELENIUM_GRID_EXTRAS_VERSION) docker-compose build --no-cache
 
 chrome: 
-			cd ./NodeChrome && docker-compose build
+			cd ./NodeChrome && docker-compose build --no-cache
 
 firefox:
-			cd ./NodeFirefox && FIREFOX_VERSION=$(FIREFOX_VERSION) docker-compose build
+			cd ./NodeFirefox && FIREFOX_VERSION=$(FIREFOX_VERSION) docker-compose build --no-cache
 	
 
 release:
