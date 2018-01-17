@@ -11,7 +11,7 @@ services:
     depends_on:
       - seleniumHub
     environment:
-      - JAVA_OPTS=-Xms512m -Xmx1024m
+      - JAVA_OPTS=-Xms512m -Xmx512m
       - DBUS_SESSION_BUS_ADDRESS=/dev/null
     volumes:
        - /dev/shm:/dev/shm 
@@ -28,7 +28,7 @@ services:
     depends_on:
       - seleniumHub
     environment:
-      - JAVA_OPTS=-Xms512m -Xmx1024m
+      - JAVA_OPTS=-Xms512m -Xmx512m
 #    volumes:
 #       - ./custom_grid_config.json:/opt/selenium/selenium_grid_extras_config.json
 #       - ./custom_node_config.json:/opt/selenium/node_5555.json
@@ -40,7 +40,7 @@ services:
       - "4444:4444"
       - "3000:3000"
     environment:
-      - JAVA_OPTS=-Xms512m -Xmx768m
+      - JAVA_OPTS=-Xms512m -Xmx512m
 #     - SE_OPTS=-debug true      
 #    volumes:
 #       - ./custom_grid_config.json:/opt/selenium/selenium_grid_extras_config.json

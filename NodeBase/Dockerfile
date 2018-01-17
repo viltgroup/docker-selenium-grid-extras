@@ -20,7 +20,7 @@ RUN  echo "deb http://archive.ubuntu.com/ubuntu xenial main universe\n" > /etc/a
 
 
 RUN apt-get update -qqy 
-RUN apt-get -qqy --no-install-recommends install sudo lsof tzdata ca-certificates openjdk-8-jdk-headless unzip dbus-x11 wget xvfb fluxbox 
+RUN apt-get -qqy --no-install-recommends install lsof tzdata ca-certificates openjdk-8-jdk-headless unzip dbus-x11 wget xvfb fluxbox 
 RUN rm -rf /var/lib/apt/lists/* /var/cache/apt/* \
   && sed -i 's/securerandom\.source=file:\/dev\/random/securerandom\.source=file:\/dev\/urandom/' ./usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security
 

@@ -15,11 +15,11 @@
     "auto_start_node": "1",
     "hub_config": {},
     "log_maximum_age_ms": 864000000,
-    "reboot_after_sessions": "5",
+    "reboot_after_sessions": "0",
     "grid_extras_port": "3000",
-    "grid_jvm_x_options": "-Xms512m -Xmx1024m",        
+    "grid_jvm_x_options": "-Xms512m -Xmx512m",        
     "grid_jvm_options": {
-      "selenium.LOGGER.level": "INFO"
+      "selenium.LOGGER.level": "SEVERE"
     },   
     "geckodriver": {
       "bit": "64",
