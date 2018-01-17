@@ -1,1 +1,7 @@
 /experimental
+.settings
+.project
+.classpath
+target
+*.iml
+.idea
