@@ -57,7 +57,7 @@ Keep in mind the `NodeBase` needs to be built before `NodeChrome` and `NodeFiref
 Using Makefile to build all:
 
 ``` bash
-SELENIUM_GRID_EXTRAS_VERSION=2.0.1 FIREFOX_VERSION=57.0.4 make build
+SELENIUM_GRID_EXTRAS_VERSION=2.0.2 FIREFOX_VERSION=57.0.4 make build
 ```
 
 

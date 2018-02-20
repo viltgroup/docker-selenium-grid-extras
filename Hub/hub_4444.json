@@ -8,8 +8,8 @@
   "throwOnCapabilityNotPresent": true,
   "nodePolling": 5000,
   "cleanUpCycle": 5000,
-  "browserTimeout": 120000,
-  "timeout": 120000,
+  "browserTimeout": 3600,
+  "timeout": 1800,
   "maxSession": 5,
-  "debug": true
+  "debug": false
 }
