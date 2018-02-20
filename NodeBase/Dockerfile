@@ -20,7 +20,7 @@ RUN  echo "deb http://archive.ubuntu.com/ubuntu xenial main universe\n" > /etc/a
 
 
 RUN apt-get update -qqy 
-RUN apt-get -qqy --no-install-recommends install lsof tzdata ca-certificates openjdk-8-jdk-headless unzip dbus-x11 wget xvfb fluxbox 
+RUN apt-get -qqy --no-install-recommends install lsof feh tzdata ca-certificates openjdk-8-jdk-headless unzip dbus-x11 wget xvfb fluxbox 
 RUN rm -rf /var/lib/apt/lists/* /var/cache/apt/* \
   && sed -i 's/securerandom\.source=file:\/dev\/random/securerandom\.source=file:\/dev\/urandom/' ./usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security
 
@@ -44,6 +44,8 @@ RUN  mkdir -p $PATH_TO_SELENIUM \
 #====================================
 COPY entry_point.sh /opt/bin/
 COPY log4j.properties $PATH_TO_SELENIUM/log4j.properties
+COPY init_fluxbox /root/.fluxbox/init 
+COPY bg.jpg /usr/share/images/fluxbox/ubuntu-light.png
 RUN chmod +x /opt/bin/entry_point.sh
 
 EXPOSE 5555 3000
