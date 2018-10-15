@@ -1,7 +1,7 @@
 FROM alpine:3.7
 MAINTAINER Minium Team <minium@vilt-group.com>
 
-ARG SELENIUM_GRID_EXTRAS_VERSION=2.0.2
+ARG SELENIUM_GRID_EXTRAS_VERSION=2.0.4
 ENV PATH_TO_SELENIUM /opt/selenium
 
 RUN apk add --no-cache \

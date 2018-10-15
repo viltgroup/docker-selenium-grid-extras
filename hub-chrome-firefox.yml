@@ -1,7 +1,7 @@
 version: '3'
 services:
   seleniumChrome:
-    image: minium/selenium-grid-extras-chrome:2.0.2
+    image: minium/selenium-grid-extras-chrome:2.0.4
     container_name: selenium-grid-extras-chrome
     restart: unless-stopped
     shm_size: 2g
@@ -18,7 +18,7 @@ services:
 #       - ./custom_grid_config.json:/opt/selenium/selenium_grid_extras_config.json
 #       - ./custom_node_config.json:/opt/selenium/node_5555.json
   seleniumFirefox:
-    image: minium/selenium-grid-extras-firefox:2.0.2
+    image: minium/selenium-grid-extras-firefox:2.0.4
     container_name: selenium-grid-extras-firefox
     restart: unless-stopped
     shm_size: 2g
@@ -33,7 +33,7 @@ services:
 #       - ./custom_grid_config.json:/opt/selenium/selenium_grid_extras_config.json
 #       - ./custom_node_config.json:/opt/selenium/node_5555.json
   seleniumHub:
-    image: minium/selenium-grid-extras-hub:2.0.2
+    image: minium/selenium-grid-extras-hub:2.0.4
     container_name: selenium-grid-extras-hub
     restart: unless-stopped
     ports:

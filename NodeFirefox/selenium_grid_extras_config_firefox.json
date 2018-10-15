@@ -23,7 +23,7 @@
     },   
     "geckodriver": {
       "bit": "64",
-      "version": "0.19.1",
+      "version": "0.23.0",
       "directory": "/opt/selenium/webdrivers/webdriver"
     },
     "webdriver": {

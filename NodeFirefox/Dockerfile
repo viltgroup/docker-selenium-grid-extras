@@ -1,10 +1,10 @@
-FROM minium/selenium-grid-extras-base:2.0.2
+FROM minium/selenium-grid-extras-base:2.0.4
 LABEL maintainer="Minium Team <minium@vilt-group.com>"
 
 #============================================
 # Firefox
 #============================================
-ARG FIREFOX_VERSION=57.0.2
+ARG FIREFOX_VERSION=62.0.3
 RUN apt-get update -qqy \
   && apt-get -qqy --no-install-recommends install bzip2 firefox \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/* \
@@ -21,5 +21,3 @@ ADD node_firefox.json $PATH_TO_SELENIUM/node_5555.json
 ADD selenium_grid_extras_config_firefox.json $PATH_TO_SELENIUM/selenium_grid_extras_config.json
 
 EXPOSE 5555 3000
-
-

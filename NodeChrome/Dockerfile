@@ -1,4 +1,4 @@
-FROM minium/selenium-grid-extras-base:2.0.2
+FROM minium/selenium-grid-extras-base:2.0.4
 LABEL maintainer="Minium Team <minium@vilt-group.com>"
 
 #============================================

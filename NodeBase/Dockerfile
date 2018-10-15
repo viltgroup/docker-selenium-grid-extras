@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 LABEL maintainer="Minium Team <minium@vilt-group.com>"
 
-ARG SELENIUM_GRID_EXTRAS_VERSION=2.0.2
+ARG SELENIUM_GRID_EXTRAS_VERSION=2.0.4
 ENV PATH_TO_SELENIUM /opt/selenium
 
 ENV DEBIAN_FRONTEND noninteractive

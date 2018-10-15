@@ -1,7 +1,7 @@
 version: '3'
 services:
   seleniumhub:
-    image: minium/selenium-grid-extras-hub:2.0.2
+    image: minium/selenium-grid-extras-hub:2.0.4
     build: 
       context: .
       args: 

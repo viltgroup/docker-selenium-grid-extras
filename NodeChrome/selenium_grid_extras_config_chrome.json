@@ -23,7 +23,7 @@
     },      
     "chromedriver": {
       "bit": "64",
-      "version": "2.34"
+      "version": "2.42"
     },
     "webdriver": {
       "version": "3.8.1"

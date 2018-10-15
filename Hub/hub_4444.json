@@ -2,7 +2,7 @@
   "port": 4444,
   "newSessionWaitTimeout": 25000,
   "servlets": [
-    "com.groupon.seleniumgridextras.grid.servlets.ProxyStatusJsonServlet"
+    "com.groupon.seleniumgridextras.grid.servlets.ListNodesServlet"
   ],
   "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
   "throwOnCapabilityNotPresent": true,
