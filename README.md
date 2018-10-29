@@ -1,17 +1,15 @@
 # Docker images for selenium grid extras Hub and Node with Chrome and Firefox
 
-
 Images included:
 
 - __minium/selenium-grid-extras-hub__: Image for running grid extras hub. Based on Alpine
 - __minium/selenium-grid-extras-base__: Base images for selenium nodes. Based on Ubuntu LTS
 - __minium/selenium-grid-extras-chrome__: Selenium Grid Extras Node with Chrome Latest
-- __minium/selenium-grid-extras-firefox__: Selenium Grid Extras Node with Firefox Latest
+- __minium/selenium-grid-extras-firefox__: Selenium Grid Extras Node with Firefox Latest (x86_64)
 
 All images are versioned after the [Selenium-Grid-Extras](https://github.com/groupon/Selenium-Grid-Extras) release number.
 
 The images can be found in the [Docker Hub](https://hub.docker.com/u/minium/)
-
 
 ## Running the images
 
@@ -22,6 +20,11 @@ docker-compose -f hub-chrome-firefox.yml up
 ```
 
 Obviously you can also use the same configuration with just plain docker command line.
+
+### Node tag explanation
+
+The tag of the selenium nodes are composed by \<selenium version>-\<selenium grid extras version>-\<browser version> (e.g. **minium/selenium-grid-extras-chrome:3.8.1-2.0.4-70.0**)
+
 
 ## Configuring the containers
 
@@ -43,7 +46,6 @@ You can pass `SE_OPTS` variable with additional commandline parameters for start
       - SE_OPTS=-debug true   
 ```
 
-
 ## Building the images
 
 Clone the repo and from inside of each directoy you can build using docker-compose:
@@ -57,9 +59,8 @@ Keep in mind the `NodeBase` needs to be built before `NodeChrome` and `NodeFiref
 Using Makefile to build all:
 
 ``` bash
-SELENIUM_GRID_EXTRAS_VERSION=2.0.2 FIREFOX_VERSION=57.0.4 make build
+SELENIUM_VERSION=3.8.1 SELENIUM_GRID_EXTRAS_VERSION=2.0.4 CHROME_VERSION=70.0 FIREFOX_VERSION=63.0 make build
 ```
-
 
 ## Troubleshooting
 

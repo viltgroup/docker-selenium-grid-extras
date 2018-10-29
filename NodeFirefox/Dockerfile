@@ -4,7 +4,7 @@ LABEL maintainer="Minium Team <minium@vilt-group.com>"
 #============================================
 # Firefox
 #============================================
-ARG FIREFOX_VERSION=62.0.3
+ARG FIREFOX_VERSION=63.0
 RUN apt-get update -qqy \
   && apt-get -qqy --no-install-recommends install bzip2 firefox \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/* \
